@@ -4,6 +4,10 @@
 
 Projet réalisé dans le cadre de l'**UMEF AI Bootcamp** · *GalsenAI Ambassador Program*.
 
+[![Ouvrir l'application](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://diabetescope.streamlit.app/)
+
+🖥️ **Tester l'application en ligne : [diabetescope.streamlit.app](https://diabetescope.streamlit.app/)**
+
 > ⚠️ **Avertissement :** ce projet est pédagogique. Le modèle estime un *risque* ; il ne pose **pas** de diagnostic médical et ne remplace pas l'avis d'un professionnel de santé.
 
 ---
