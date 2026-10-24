@@ -44,12 +44,15 @@ Jeu de données **Pima Indians Diabetes** : 768 femmes d'origine Pima (21 ans et
 
 Meilleur modèle : **régression logistique**.
 
-| Métrique | Valeur |
-|---|---|
-| Accuracy | 0,73 |
-| Rappel (classe « diabète ») | 0,70 |
-| Précision (classe « diabète ») | 0,60 |
-| ROC-AUC | ≈ 0,82 |
+| Métrique | Valeur | Référence naïve |
+|---|---|---|
+| ROC-AUC (validation croisée, 5 plis) | 0,84 | 0,50 |
+| ROC-AUC (test) | 0,81 | 0,50 |
+| Accuracy | 0,73 | 0,65 |
+| Rappel (classe « diabète ») | 0,70 | 0,00 |
+| Précision (classe « diabète ») | 0,60 | 0,00 |
+
+Avec un seuil de décision abaissé à 0,4, le rappel monte à **0,83** (précision 0,57).
 
 Les performances sont correctes sans être parfaites : 8 mesures ne suffisent pas à tout prédire.
 
@@ -70,8 +73,8 @@ Le seuil de décision se règle dans la barre latérale et met à jour tous les 
 ## 🚀 Installation et lancement
 
 ```bash
-git clone https://github.com/<votre-utilisateur>/diabete-scope.git
-cd diabete-scope
+git clone https://github.com/BiraneThiam2/DiabeteScope.git
+cd DiabeteScope
 
 python -m venv .venv
 source .venv/bin/activate        # Windows : .venv\Scripts\activate
